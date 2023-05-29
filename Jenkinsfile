@@ -3,9 +3,21 @@ pipeline {
         label "Linux && Java11"
     }
     stages {
-        stage('Hello'){
+        stage('Build'){
             steps {
-                echo 'HelloWorld'
+                echo 'Hello Build'
+            }
+        }
+
+        stage('Test'){
+            steps {
+                echo 'Hello Test'
+            }
+        }
+
+        stage('Deploy'){
+            steps {
+                echo 'Hello Deploy'
             }
         }
     }
