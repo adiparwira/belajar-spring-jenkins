@@ -6,6 +6,7 @@ pipeline {
         stage('Build'){
             steps {
                 echo 'Hello Build'
+                ./mvnw package
             }
         }
 
