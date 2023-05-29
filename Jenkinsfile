@@ -6,13 +6,13 @@ pipeline {
         stage('Build'){
             steps {
                 echo 'Hello Build'
-                ./mvnw package
             }
         }
 
         stage('Test'){
             steps {
                 echo 'Hello Test'
+                sh("error")
             }
         }
 
