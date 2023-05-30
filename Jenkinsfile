@@ -2,7 +2,12 @@ pipeline {
     agent {
         label "Linux && Java11"
     }
+
     stages {
+        stage('scm') {
+            echo("scm")
+        }
+
         stage('Build'){
             steps {
                 script {
