@@ -4,6 +4,12 @@ pipeline {
     }
 
     stages {
+        stage("Init") {
+            steps {
+                cleanWs()
+            }
+        } 
+
         stage('Scm') {
             steps {
                 echo("Scm")
