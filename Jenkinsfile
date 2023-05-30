@@ -4,9 +4,13 @@ pipeline {
     }
 
     stages {
-        stage('scm') {
+        stage('Scm') {
             steps {
-                echo("scm")
+                echo("Scm")
+                
+                dir("test-dir"){
+                    
+                }
             }
         }
 
