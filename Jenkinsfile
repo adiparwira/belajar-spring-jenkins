@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo("Scm")
 
-                dir("test-dir"){
+                dir("${BRANCH}"){
                     script {
                         def date = new Date()
                         def data = "Hello World\nSecond line\n" + date
