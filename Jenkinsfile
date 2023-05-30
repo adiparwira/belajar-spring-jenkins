@@ -5,9 +5,9 @@ pipeline {
 
     stages {
         stage('scm') {
-            steps (
+            steps {
                 echo("scm")
-            )
+            }
         }
 
         stage('Build'){
