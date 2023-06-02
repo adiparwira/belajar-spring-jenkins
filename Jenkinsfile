@@ -77,10 +77,10 @@ pipeline {
         stage('Deploy'){
             agent {
                 node {
-                    label "linux && java11"
+                    label "Agent || 2"
                 }
             }
-            
+
             steps {
                 echo 'Hello Deploy 1'
                 sleep(5)
