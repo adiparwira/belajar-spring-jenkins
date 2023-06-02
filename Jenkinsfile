@@ -2,17 +2,13 @@ pipeline {
     agent none
 
     stages {
-        agent {
-            node {
-                label "linux && java11"
-            }
-        }
         stage("Init") {
             agent {
                 node {
                     label "linux && java11"
                 }
             }
+            
             steps {
                 echo("Init")
             }
